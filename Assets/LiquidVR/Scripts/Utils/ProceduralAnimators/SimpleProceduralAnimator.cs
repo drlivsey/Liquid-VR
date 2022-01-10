@@ -8,17 +8,18 @@ namespace Liquid.Utils
 {
     public abstract class SimpleProceduralAnimator : BaseProceduralAnimator
     {
-        [SerializeField] private ProceduralAnimation m_animationType = ProceduralAnimation.Single;
+        [SerializeField] private IterationType m_animationType = IterationType.Single;
         [SerializeField] protected Vector3 m_beginValue = Vector3.zero;
         [SerializeField] protected Vector3 m_endValue = Vector3.one;
         [SerializeField] private float m_animationTime = 1f;
         [SerializeField] private bool m_playOnEnable = false;
-        [SerializeField] private UnityEvent m_onStart;
-        [SerializeField] private UnityEvent m_onPause;
-        [SerializeField] private UnityEvent m_onResume;
-        [SerializeField] private UnityEvent m_onStop;
-        [SerializeField] private UnityEvent m_onAnimationBegin;
-        [SerializeField] private UnityEvent m_onAnimationEnd;
+        
+        [SerializeField, HideInInspector] private UnityEvent m_onStart = new UnityEvent();
+        [SerializeField, HideInInspector] private UnityEvent m_onPause = new UnityEvent();
+        [SerializeField, HideInInspector] private UnityEvent m_onResume = new UnityEvent();
+        [SerializeField, HideInInspector] private UnityEvent m_onStop = new UnityEvent();
+        [SerializeField, HideInInspector] private UnityEvent m_onAnimationBegin = new UnityEvent();
+        [SerializeField, HideInInspector] private UnityEvent m_onAnimationEnd = new UnityEvent();
 
         public bool IsPlaying
         {
@@ -146,14 +147,21 @@ namespace Liquid.Utils
         {
             switch (m_animationType)
             {
-                case ProceduralAnimation.Single: 
+                case IterationType.Single: 
                     return;
-                case ProceduralAnimation.Cyclic: 
+                case IterationType.Cyclic: 
                     Animate();
                     return;
-                case ProceduralAnimation.PingPong:
-                    if (direction == Direction.Forward) AnimateReversed();
-                    else if (direction == Direction.Backward) Animate();
+                case IterationType.PingPong:
+                    switch (direction)
+                    {
+                        case Direction.Forward:
+                            AnimateReversed();
+                            break;
+                        case Direction.Backward:
+                            Animate();
+                            break;
+                    }
                     return;
             }
         }

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="486f2fdd-b3f2-4358-9f86-6e4e01e9d57d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidBaseMediaPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/BaseLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/ConditionsList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Editor/EditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/ClampedLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/HighLoadedSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/UpdatingSubsystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/SimpleUpdatableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Semaphore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/FloatLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/BaseSubsystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/BaseUpdatableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidBaseMediaPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/UI/LiquidVideoPlayerControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidSimpleMediaPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidVideoPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/IUpdatableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ISubsystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/BaseSubsystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/SimpleUpdatableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Semaphor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Semaphore.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ActionQueue/ActionsQueueSubsystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ActionsQueue/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/DelayedCall/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/BaseUpdatableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Editor/EditorUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Delay.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/Editor/BaseUpdatableComponentEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ActionsQueue/ActionsQueueSubsystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/DelayedCall/DelayedCallSubsystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/UpdatingSubsystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/ProceduralAnimators/Editor/SimpleProceduralAnimatorEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/AnimatorTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Editor/AnimatorTriggerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Editor/AnimatorStateEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Core/Enums.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/ProceduralAnimators/SimpleProceduralAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/SequencedEventer.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/ConditionsList.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/ClampedLerper.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/BaseLerper.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/ColorLerper.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/FloatLerper.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/QuaternionLerper.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Vector3Lerper.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/Vector3LerperEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/BaseLerperEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/FloatLerperEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/ClampedLerperEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/QuaternionLerperEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/ColorLerperEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/BaseParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/BoolParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/ColorParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/FloatParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/IntParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/SimpleParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Setters/VectorParameterSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/BaseSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/HighLoadedSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/SimpleSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/PeriodicalSpawner.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="22nbDoQBEPlrgnBt8BgoykOArYQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="486f2fdd-b3f2-4358-9f86-6e4e01e9d57d" name="Default Changelist" comment="" />
+      <created>1640476201246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640476201246</updated>
+      <workItem from="1640476227369" duration="2600000" />
+      <workItem from="1640897109013" duration="9521000" />
+      <workItem from="1640980601323" duration="3526000" />
+      <workItem from="1641068980770" duration="11000000" />
+      <workItem from="1641166757930" duration="2157000" />
+      <workItem from="1641234461045" duration="15273000" />
+      <workItem from="1641298117916" duration="8030000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

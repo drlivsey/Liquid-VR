@@ -1,25 +1,29 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Liquid.Utils
+namespace Liquid.Utils.Lerpers
 {
     public abstract class BaseLerper : MonoBehaviour
     {
         [SerializeField] protected float m_lerpTime = 1f;
-        [SerializeField] private UnityEvent m_onLerpStart;
-        [SerializeField] private UnityEvent m_onLerpEnd;
-        [SerializeField] private UnityEvent m_onLerpStoped;
-        [SerializeField] private UnityEvent m_onLerpPause;
-        [SerializeField] private UnityEvent m_onLerpResume;
+        [SerializeField] private UnityEvent m_onLerpStart = new UnityEvent();
+        [SerializeField] private UnityEvent m_onLerpEnd = new UnityEvent();
+        [SerializeField] private UnityEvent m_onLerpStop = new UnityEvent();
+        [SerializeField] private UnityEvent m_onLerpPause = new UnityEvent();
+        [SerializeField] private UnityEvent m_onLerpResume = new UnityEvent();
 
         public UnityEvent OnLerpStart => m_onLerpStart;
         public UnityEvent OnLerpEnd => m_onLerpEnd;
-        public UnityEvent OnLerpStoped => m_onLerpStoped;
+        public UnityEvent OnLerpStoped => m_onLerpStop;
         public UnityEvent OnLerpPause => m_onLerpPause;
         public UnityEvent OnLerpResume => m_onLerpResume;
+
+        public float LerpTime
+        {
+            get => m_lerpTime;
+            set => m_lerpTime = value;
+        }
 
         public float CurrentLerp { get; private set; } = 0f;
 

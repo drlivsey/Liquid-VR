@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Liquid.Utils
+namespace Liquid.Utils.Setters
 {
     public class IntParameterSetter : SimpleParameterSetter
     {

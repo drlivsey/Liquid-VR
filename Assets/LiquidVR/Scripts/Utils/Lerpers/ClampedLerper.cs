@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Liquid.Core;
 
-namespace Liquid.Utils
+namespace Liquid.Utils.Lerpers
 {
     public class ClampedLerper : BaseLerper
     {
-        [SerializeField] private FloatEvent m_onLerpTick;
+        [SerializeField] private FloatEvent m_onLerpTick = new FloatEvent();
         
         public FloatEvent OnLerpTick => m_onLerpTick;
         public float CurrentValue { get; private set; }

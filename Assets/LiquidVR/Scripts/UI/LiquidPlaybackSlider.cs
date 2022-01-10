@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 namespace Liquid.UI
 {
-    public class LiquidVideoPlayerSlider : Slider
+    public class LiquidPlaybackSlider : Slider
     {
         [SerializeField] private UnityEvent m_onHandlePointerDown = new UnityEvent();
         [SerializeField] private UnityEvent m_onHandlePointerUp = new UnityEvent();

@@ -38,7 +38,7 @@ namespace Liquid.Core
         Immobilized = 2
     }
 
-    public enum ProceduralAnimation
+    public enum IterationType
     {
         Cyclic = 0,
         Single = 1,
@@ -55,6 +55,14 @@ namespace Liquid.Core
     {
         Local = 0,
         Global = 1
+    }
+
+    public enum UpdatingState
+    {
+        Update = 0,
+        FixedUpdate = 1,
+        LateUpdate = 2,
+        UpdateByTime = 3
     }
 
     public static class AxisVector3

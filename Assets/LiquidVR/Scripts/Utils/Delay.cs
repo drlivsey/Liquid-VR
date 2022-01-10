@@ -9,8 +9,8 @@ namespace Liquid.Utils
         [SerializeField, Tooltip("Delay in seconds")] private float m_delay = 1f;
         [SerializeField] private bool m_waitRealtime = false;
         [SerializeField] private bool m_enableOnStart = false;
-        [SerializeField] private UnityEvent m_onCountdownBegin;
-        [SerializeField] private UnityEvent m_onCountdownEnd;
+        [SerializeField] private UnityEvent m_onCountdownBegin = new UnityEvent();
+        [SerializeField] private UnityEvent m_onCountdownEnd = new UnityEvent();
 
         public UnityEvent OnCountdownBegin => m_onCountdownBegin;
         public UnityEvent OnCountdownEnd => m_onCountdownEnd;

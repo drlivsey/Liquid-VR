@@ -99,9 +99,11 @@ namespace Liquid.Utils
             
             m_targetAnimator.speed = 1f;
             m_targetAnimator.Play(state.Name, state.Layer);
-
+            
+            yield return new WaitForEndOfFrame();
+            
             _isPlaying = true;
-
+            
             yield return new WaitForSeconds(m_targetAnimator.GetCurrentAnimatorStateInfo(state.Layer).length);
 
             _isPlaying = false;

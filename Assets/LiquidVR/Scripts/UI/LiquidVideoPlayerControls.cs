@@ -15,7 +15,7 @@ namespace Liquid.UI
         [SerializeField] private Button m_resetButton = null;
         [SerializeField] private Button m_rewindForwardButton = null;
         [SerializeField] private Button m_rewindBackButton = null;
-        [SerializeField] private LiquidVideoPlayerSlider m_playbackProgressBar = null;
+        [SerializeField] private LiquidPlaybackSlider m_playbackProgressBar = null;
         [SerializeField] private Slider m_soundVolumeSlider = null;
         [SerializeField] private TMP_Text m_playbackTimeField = null;
 
@@ -163,7 +163,7 @@ namespace Liquid.UI
 
         private void ResetVideo()
         {
-            _targetVideoPlayer.ResetVideo();
+            _targetVideoPlayer.ResetMedia();
             UpdateProgressBarValue();
             UpdateTimeValue();
         }
@@ -203,7 +203,7 @@ namespace Liquid.UI
 
         private void SetSoundVolume(float volume)
         {
-            _targetVideoPlayer.SetSoundVolume(volume);
+            _targetVideoPlayer.SoundVolume = volume;
         }
 
         private void UpdateProgressBarValue()

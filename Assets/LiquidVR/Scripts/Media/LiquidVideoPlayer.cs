@@ -7,64 +7,39 @@ using UnityEngine.Video;
 namespace Liquid.Media
 {
     [RequireComponent(typeof(VideoPlayer), typeof(AudioSource))]
-    public class LiquidVideoPlayer : MonoBehaviour
+    public class LiquidVideoPlayer : LiquidSimpleMediaPlayer
     {
-        [SerializeField] private UnityEvent m_onPlay = new UnityEvent();
-        [SerializeField] private UnityEvent m_onPause = new UnityEvent();
-        [SerializeField] private UnityEvent m_onStop = new UnityEvent();
-        [SerializeField] private UnityEvent m_onReset = new UnityEvent();
         [SerializeField] private UnityEvent m_onPrepare = new UnityEvent();
 
         private VideoPlayer _targetVideoPlayer = null;
         private AudioSource _targetAudioSource = null;
 
-        public float PlaybackProgress
-        {
-            get => (float)(_targetVideoPlayer.time / _targetVideoPlayer.length);
-        }
-        public float Time
-        {
-            get => (float)_targetVideoPlayer.time;
-        }
-        public float Length
-        {
-            get => (float)_targetVideoPlayer.length;
-        }
-        public bool IsPrepared
-        {
-            get => _targetVideoPlayer.isPrepared;
-        }
-        public bool IsPaused
-        {
-            get => _targetVideoPlayer.isPaused;
-        }
-        public bool IsPlaying 
-        {
-            get => _targetVideoPlayer.isPlaying;
-        }
-        public float SoundVolume
+        public override float Time => (float)_targetVideoPlayer.time;
+        public override float Length => (float)_targetVideoPlayer.length;
+        
+        public override bool IsPaused => _targetVideoPlayer.isPaused;
+        public override bool IsPlaying => _targetVideoPlayer.isPlaying;
+        public override float SoundVolume
         {
             get => _targetAudioSource.volume;
+            set => _targetAudioSource.volume = value;
         }
-
-        public UnityEvent OnPlay => m_onPlay;
-        public UnityEvent OnPause => m_onPause;
-        public UnityEvent OnStop => m_onStop;
-        public UnityEvent OnReset => m_onReset;
+        public bool IsPrepared => _targetVideoPlayer.isPrepared;
+        
         public UnityEvent OnPrepare => m_onPrepare;
 
-        private void Awake()
+        public override void SetSource(object source)
         {
-            InitializeComponent();
-        }
-
-        public void SetVideoClip(VideoClip clip)
-        {
+            if (source.GetType() != typeof(VideoClip))
+            {
+                Debug.LogError($"{source.GetType()} is not a VideoClip!", this.gameObject);
+                return;
+            }
             _targetVideoPlayer.Stop();
-            _targetVideoPlayer.clip = clip;
+            _targetVideoPlayer.clip = source as VideoClip;
         }
 
-        public void SetTime(float time)
+        public override void SetTime(float time)
         {
             if (_targetVideoPlayer.isPrepared)
             {
@@ -72,54 +47,37 @@ namespace Liquid.Media
             }
         }
 
-        public void SetTimeClamped(float time)
-        {
-            if (_targetVideoPlayer.isPrepared)
-            {
-                var clampedTime = time / _targetVideoPlayer.length;
-            }
-        }
-
-        public void SetPlaybackProgress(float progress)
-        {
-            if (_targetVideoPlayer.isPrepared)
-            {
-                _targetVideoPlayer.time = _targetVideoPlayer.length * progress;
-            }
-        }
-
-        public void SetSoundVolume(float value)
-        {
-            _targetAudioSource.volume = value;
-        }
-
-        public void Play()
+        public override void Play()
         {
             _targetVideoPlayer.Prepare();
             _targetVideoPlayer.Play();
+            OnPlay?.Invoke();
         }
 
-        public void Pause()
+        public override void Pause()
         {
             if (_targetVideoPlayer.isPlaying)
             {
                 _targetVideoPlayer.Pause();
+                OnPause?.Invoke();
             }
         }
 
-        public void Stop()
+        public override void Stop()
         {
             if (_targetVideoPlayer.isPlaying)
             {
                 _targetVideoPlayer.Stop();
+                OnStop?.Invoke();
             }
         }
 
-        public void ResetVideo()
+        public override void ResetMedia()
         {
             if (_targetVideoPlayer.isPrepared)
             {
                 _targetVideoPlayer.time = 0f;
+                OnReset?.Invoke();
             }
         }
 
@@ -136,11 +94,11 @@ namespace Liquid.Media
 
         public IEnumerator SetVideoClipAndPrepare(VideoClip clip)
         {
-            SetVideoClip(clip);
+            SetSource(clip);
             yield return Prepare();
         }
 
-        private void InitializeComponent()
+        protected override void InitializeComponent()
         {
             _targetVideoPlayer = GetComponent<VideoPlayer>();
             _targetAudioSource = GetComponent<AudioSource>();

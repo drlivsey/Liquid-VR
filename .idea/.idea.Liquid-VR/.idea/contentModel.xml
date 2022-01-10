@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\antoh\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\antoh\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Liquid-VR.1533483961.00" t="ExcludeRecursive" />
+    <e p="G:\Projects\Liquid-VR" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="LiquidVR" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Core" t="Include">
+              <e p="Enums.cs" t="Include" />
+              <e p="Events.cs" t="Include" />
+              <e p="Extensions.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="EditorUtils.cs" t="Include" />
+            </e>
+            <e p="Interactables" t="Include">
+              <e p="LiquidControllerInput.cs" t="Include" />
+              <e p="LiquidDirectInteractor.cs" t="Include" />
+              <e p="LiquidGrabInteractable.cs" t="Include" />
+              <e p="LiquidHandSelectingEventer.cs" t="Include" />
+              <e p="LiquidPlayer.cs" t="Include" />
+              <e p="LiquidPlayerFinger.cs" t="Include" />
+              <e p="LiquidPlayerStateMachine.cs" t="Include" />
+              <e p="LiquidRigCamera.cs" t="Include" />
+              <e p="LiquidRigTeleport.cs" t="Include" />
+              <e p="LiquidRigTrigger.cs" t="Include" />
+              <e p="LiquidTeleportInteractor.cs" t="Include" />
+              <e p="Toggles" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="LiquidBaseAnimatorEditor.cs" t="Include" />
+                </e>
+                <e p="LiquidBaseAnimator.cs" t="Include" />
+                <e p="LiquidBaseToggle.cs" t="Include" />
+                <e p="LiquidButton.cs" t="Include" />
+                <e p="LiquidButtonAnimator.cs" t="Include" />
+                <e p="LiquidButtonHoverInteractable.cs" t="Include" />
+                <e p="LiquidSwitcher.cs" t="Include" />
+                <e p="LiquidSwitcherAnimator.cs" t="Include" />
+                <e p="LiquidSwitcherInteractable.cs" t="Include" />
+                <e p="LiquidToggleHoverInteractable.cs" t="Include" />
+                <e p="LiquidTumbler.cs" t="Include" />
+                <e p="LiquidTumblerAnimator.cs" t="Include" />
+                <e p="LiquidTumblerHoverInteractable.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Media" t="Include">
+              <e p="LiquidBaseMediaPlayer.cs" t="Include" />
+              <e p="LiquidSimpleMediaPlayer.cs" t="Include" />
+              <e p="LiquidVideoPlayer.cs" t="Include" />
+              <e p="LiquidVideoPlayerPlaylist.cs" t="Include" />
+            </e>
+            <e p="Subsystems" t="Include">
+              <e p="ActionsQueue" t="Include">
+                <e p="ActionsQueueSubsystem.cs" t="Include" />
+              </e>
+              <e p="BaseSubsystem.cs" t="Include" />
+              <e p="DelayedCall" t="Include">
+                <e p="DelayedCallSubsystem.cs" t="Include" />
+              </e>
+              <e p="Updating" t="Include">
+                <e p="BaseUpdatableComponent.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BaseUpdatableComponentEditor.cs" t="Include" />
+                </e>
+                <e p="SimpleUpdatableComponent.cs" t="Include" />
+                <e p="UpdatingSubsystem.cs" t="Include" />
+              </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="LiquidPlaybackSlider.cs" t="Include" />
+              <e p="LiquidVideoPlayerControls.cs" t="Include" />
+              <e p="ProgressBar.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="AnimatorTrigger.cs" t="Include" />
+              <e p="ConditionsList.cs" t="Include" />
+              <e p="Delay.cs" t="Include" />
+              <e p="Lerpers" t="Include">
+                <e p="BaseLerper.cs" t="Include" />
+                <e p="ClampedLerper.cs" t="Include" />
+                <e p="ColorLerper.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="BaseLerperEditor.cs" t="Include" />
+                  <e p="ClampedLerperEditor.cs" t="Include" />
+                  <e p="ColorLerperEditor.cs" t="Include" />
+                  <e p="FloatLerperEditor.cs" t="Include" />
+                  <e p="QuaternionLerperEditor.cs" t="Include" />
+                  <e p="Vector3LerperEditor.cs" t="Include" />
+                </e>
+                <e p="FloatLerper.cs" t="Include" />
+                <e p="QuaternionLerper.cs" t="Include" />
+                <e p="Vector3Lerper.cs" t="Include" />
+              </e>
+              <e p="ProceduralAnimators" t="Include">
+                <e p="BaseProceduralAnimator.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="SimpleProceduralAnimatorEditor.cs" t="Include" />
+                </e>
+                <e p="PositionProceduralAnimator.cs" t="Include" />
+                <e p="RotationProceduralAnimator.cs" t="Include" />
+                <e p="ScaleProceduralAnimator.cs" t="Include" />
+                <e p="SimpleProceduralAnimator.cs" t="Include" />
+              </e>
+              <e p="Semaphore.cs" t="Include" />
+              <e p="SequencedEventer.cs" t="Include" />
+              <e p="Setters" t="Include">
+                <e p="BaseParameterSetter.cs" t="Include" />
+                <e p="BoolParameterSetter.cs" t="Include" />
+                <e p="ColorParameterSetter.cs" t="Include" />
+                <e p="FloatParameterSetter.cs" t="Include" />
+                <e p="IntParameterSetter.cs" t="Include" />
+                <e p="SimpleParameterSetter.cs" t="Include" />
+                <e p="VectorParameterSetter.cs" t="Include" />
+              </e>
+              <e p="Spawners" t="Include">
+                <e p="BaseSpawner.cs" t="Include" />
+                <e p="HighLoadedSpawner.cs" t="Include" />
+                <e p="PeriodicalSpawner.cs" t="Include" />
+                <e p="SimpleSpawner.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Liquid-VR.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
