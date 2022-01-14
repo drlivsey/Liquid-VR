@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Liquid.Media;
+using Liquid.Core;
 
 namespace Liquid.UI
 {
@@ -215,22 +216,8 @@ namespace Liquid.UI
         private void UpdateTimeValue()
         {
             var time = _targetVideoPlayer.Time;
-            var formatedTime = GetPlaybackTimeFormated(time);
+            var formatedTime = Converter.SecondsToTime(time);
             m_playbackTimeField.text = formatedTime;
-        }
-
-        private string GetPlaybackTimeFormated(float time)
-        {
-            var hours = (int)(time / 3600);
-            var minutes = (int)((time % 3600) / 60);
-            var seconds = (int)((time % 3600) % 60);
-
-            return $"{ConvertToTimeFormat(hours)}:{ConvertToTimeFormat(minutes)}:{ConvertToTimeFormat(seconds)}";
-        }
-
-        private string ConvertToTimeFormat(int value)
-        {
-            return value < 10 ? $"0{value}" : $"{value}";
         }
     }
 }

@@ -15,12 +15,12 @@ D:/UNITY_PROJECTS/Liquid VR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64118
+62834
 Successfully changed project path to: D:/UNITY_PROJECTS/Liquid VR
 D:/UNITY_PROJECTS/Liquid VR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 36.66 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.84 ms.
+Refreshing native plugins compatible for Editor in 39.14 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.69 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/UNITY_PROJECTS/Liquid VR/Assets
@@ -35,23 +35,23 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001922 seconds.
+Registered in 0.002160 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.39 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 35.75 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.650 seconds
+- Completed reload, in  2.000 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004005 seconds.
+Registered in 0.003330 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.12 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 33.56 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
@@ -63,19 +63,19 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.036 seconds
+- Completed reload, in  1.053 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2022 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.9 MB.
-System memory in use after: 89.0 MB.
+Unloading 2035 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.3 MB.
+System memory in use after: 89.3 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2462.
-Total: 2.279300 ms (FindLiveObjects: 0.202000 ms CreateObjectMapping: 0.063800 ms MarkObjects: 1.914300 ms  DeleteObjects: 0.098300 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2474.
+Total: 2.368800 ms (FindLiveObjects: 0.283000 ms CreateObjectMapping: 0.073900 ms MarkObjects: 1.895700 ms  DeleteObjects: 0.115100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -89,27 +89,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidTeleportInteractor.cs
-  artifactKey: Guid(c8b657efd57efa145bab4f0bb68b1860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidTeleportInteractor.cs using Guid(c8b657efd57efa145bab4f0bb68b1860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae62a870817f68f2aa14fb4b9067326') in 0.031532 seconds 
-  Import took 0.066659 seconds .
+  path: Assets/LiquidVR/Scripts/Utils/SequencedEventer.cs
+  artifactKey: Guid(c612c7b9eac8ff847a52222f4b10d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/SequencedEventer.cs using Guid(c612c7b9eac8ff847a52222f4b10d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8704c4de6e0a1ca13c0d4fb92e0ce40c') in 0.029953 seconds 
+  Import took 0.047245 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidPlayer.cs
-  artifactKey: Guid(22a7df7cc7db4c14180eef7531ccfef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidPlayer.cs using Guid(22a7df7cc7db4c14180eef7531ccfef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e27cb757e69feb6e762f02c9d64c8bc') in 0.006073 seconds 
-  Import took 0.009005 seconds .
+  Time since last request: 0.000294 seconds.
+  path: Assets/LiquidVR/Scripts/Utils/Semaphore.cs
+  artifactKey: Guid(86fe9a79ede1bba4a87431fd421cc297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/Semaphore.cs using Guid(86fe9a79ede1bba4a87431fd421cc297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a80c3c125a76d1759e18c713f9097d6') in 0.005178 seconds 
+  Import took 0.008036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.406314 seconds.
+  path: Assets/LiquidVR/Scripts/Utils/ConditionsList.cs
+  artifactKey: Guid(6ea6c61d2bd73fc4f801dddc6aa19e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/ConditionsList.cs using Guid(6ea6c61d2bd73fc4f801dddc6aa19e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f719c429530711b9ecb20d00a830579e') in 0.005267 seconds 
+  Import took 0.008119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.350526 seconds.
+  path: Assets/LiquidVR/Scripts/Utils/AnimatorTrigger.cs
+  artifactKey: Guid(aa55a25760d190940a04ed107479eff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/AnimatorTrigger.cs using Guid(aa55a25760d190940a04ed107479eff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c08a315dcd1eb062125f345dabde91') in 0.006455 seconds 
+  Import took 0.009871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.843002 seconds.
+  path: Assets/LiquidVR/Scripts/Utils/Timer.cs
+  artifactKey: Guid(7929babc4f0b09041bf06b965fe91630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/Timer.cs using Guid(7929babc4f0b09041bf06b965fe91630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7bde92dde281752bcf92fc2b50b064') in 0.006639 seconds 
+  Import took 0.010721 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005144 seconds.
+Registered in 0.003405 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
@@ -117,79 +141,17 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.998 seconds
+- Completed reload, in  1.124 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.44 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2465.
-Total: 2.340900 ms (FindLiveObjects: 0.203500 ms CreateObjectMapping: 0.051800 ms MarkObjects: 1.975000 ms  DeleteObjects: 0.109900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2877.723435 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidGrabInteractable.cs
-  artifactKey: Guid(a6199e276b6056b438ce1d5b45dd5bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidGrabInteractable.cs using Guid(a6199e276b6056b438ce1d5b45dd5bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d4e9f78e77d87885c640418d9e51ab') in 0.013827 seconds 
-  Import took 0.016496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.654780 seconds.
-  path: Assets/LiquidVR/Prefabs/Sphere.prefab
-  artifactKey: Guid(3d7fba4249865264a983ee4b3573bb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Prefabs/Sphere.prefab using Guid(3d7fba4249865264a983ee4b3573bb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e02e9e386445e5707d460195a0d117e') in 0.163396 seconds 
-  Import took 0.166995 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/LiquidVR/Prefabs/VideoPlayer.prefab
-  artifactKey: Guid(b20e72856fbbdf3489a34aec5f35e759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Prefabs/VideoPlayer.prefab using Guid(b20e72856fbbdf3489a34aec5f35e759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d737cc1a406752767930bb96631c58') in 0.092480 seconds 
-  Import took 0.095805 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003855 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.8 MB.
+System memory in use after: 87.8 MB.
 
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.4 MB.
-System memory in use after: 90.5 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2476.
-Total: 2.617800 ms (FindLiveObjects: 0.184900 ms CreateObjectMapping: 0.054300 ms MarkObjects: 2.277900 ms  DeleteObjects: 0.099900 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2478.
+Total: 2.310200 ms (FindLiveObjects: 0.191900 ms CreateObjectMapping: 0.059700 ms MarkObjects: 1.974000 ms  DeleteObjects: 0.083800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -205,11 +167,11 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004500 seconds.
+Registered in 0.006192 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
@@ -217,17 +179,17 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.992 seconds
+- Completed reload, in  0.966 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.4 MB.
-System memory in use after: 90.5 MB.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2479.
-Total: 2.580000 ms (FindLiveObjects: 0.203000 ms CreateObjectMapping: 0.056200 ms MarkObjects: 2.215100 ms  DeleteObjects: 0.104500 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2481.
+Total: 2.077000 ms (FindLiveObjects: 0.169000 ms CreateObjectMapping: 0.069400 ms MarkObjects: 1.751000 ms  DeleteObjects: 0.086600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -241,13 +203,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 1013.419323 seconds.
+  path: Assets/LiquidVR/Scripts/Utils/Timer.cs
+  artifactKey: Guid(7929babc4f0b09041bf06b965fe91630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/Timer.cs using Guid(7929babc4f0b09041bf06b965fe91630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2050196f5dcbdcb6c621498c88fd9ce1') in 0.007301 seconds 
+  Import took 0.010604 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003170 seconds.
+Registered in 0.003260 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
@@ -255,133 +225,53 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
+- Completed reload, in  1.019 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.8 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2484.
+Total: 2.249200 ms (FindLiveObjects: 0.185800 ms CreateObjectMapping: 0.071800 ms MarkObjects: 1.906700 ms  DeleteObjects: 0.084100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 668.442936 seconds.
+  path: Assets/LiquidVR/Scripts/Utils/Timer.cs
+  artifactKey: Guid(7929babc4f0b09041bf06b965fe91630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Utils/Timer.cs using Guid(7929babc4f0b09041bf06b965fe91630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa78cad21d1bac22e2398de3103d6be6') in 0.004653 seconds 
+  Import took 0.008466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.183448 seconds.
+  path: Assets/LiquidVR/Scripts/UI/TMP_Integrations/TimerGUIElement.cs
+  artifactKey: Guid(e3ae10a81d5e81e4e8f6d958808b9f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/UI/TMP_Integrations/TimerGUIElement.cs using Guid(e3ae10a81d5e81e4e8f6d958808b9f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbd80c6c07e834ae0c76de860b09994') in 0.005966 seconds 
+  Import took 0.009146 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003161 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.46 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 1995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.5 MB.
-System memory in use after: 90.6 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2482.
-Total: 2.209400 ms (FindLiveObjects: 0.194700 ms CreateObjectMapping: 0.056600 ms MarkObjects: 1.870500 ms  DeleteObjects: 0.086900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 7936.807048 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidControllerInput.cs
-  artifactKey: Guid(3f3180ad72bcf0749a5acf7e8bf961bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidControllerInput.cs using Guid(3f3180ad72bcf0749a5acf7e8bf961bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003d165ee355539c78fc8585f2ee0873') in 0.010034 seconds 
-  Import took 0.014213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002823 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidControllerInput.cs
-  artifactKey: Guid(3f3180ad72bcf0749a5acf7e8bf961bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidControllerInput.cs using Guid(3f3180ad72bcf0749a5acf7e8bf961bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003d165ee355539c78fc8585f2ee0873') in 0.001996 seconds 
-  Import took 0.005441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.346084 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidGrabInteractable.cs
-  artifactKey: Guid(a6199e276b6056b438ce1d5b45dd5bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidGrabInteractable.cs using Guid(a6199e276b6056b438ce1d5b45dd5bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df956c9218aec341039a64a1dca6ca32') in 0.005859 seconds 
-  Import took 0.009761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003066 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidGrabInteractable.cs
-  artifactKey: Guid(a6199e276b6056b438ce1d5b45dd5bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidGrabInteractable.cs using Guid(a6199e276b6056b438ce1d5b45dd5bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df956c9218aec341039a64a1dca6ca32') in 0.002368 seconds 
-  Import took 0.005994 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.425551 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidPlayerStateMachine.cs
-  artifactKey: Guid(10da0bd8ea4ebe64591e32f38a3899a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidPlayerStateMachine.cs using Guid(10da0bd8ea4ebe64591e32f38a3899a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db24f9c9410b4a6d7dd8e815cc8a873f') in 0.005636 seconds 
-  Import took 0.009182 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.356584 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidRigTeleport.cs
-  artifactKey: Guid(d9c2391052c0a344f8ada083cf5cf974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidRigTeleport.cs using Guid(d9c2391052c0a344f8ada083cf5cf974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a7fab17d670539e30cd0ca09630412') in 0.035903 seconds 
-  Import took 0.038814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 80.987040 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/TargetableSocket.cs
-  artifactKey: Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/TargetableSocket.cs using Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375538bbf9f6fc6add64269dfdc3226d') in 0.005883 seconds 
-  Import took 0.009673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005123 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/TargetableSocket.cs
-  artifactKey: Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/TargetableSocket.cs using Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375538bbf9f6fc6add64269dfdc3226d') in 0.002268 seconds 
-  Import took 0.005610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.045264 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidTargetableSocket.cs
-  artifactKey: Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidTargetableSocket.cs using Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb8906c3dfe04fb2ea4c0323b157b54') in 0.005709 seconds 
-  Import took 0.010127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 132.233220 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/LiquidTargetableSocket.cs
-  artifactKey: Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/LiquidTargetableSocket.cs using Guid(e9a7b9d812e7d4846995c4c17ae6d84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488becfb7fe613cb739c67f0fd774e48') in 0.003263 seconds 
-  Import took 0.008533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.637331 seconds.
-  path: Assets/LiquidVR/Scripts/Interactables/Editor
-  artifactKey: Guid(1ad4b528f5b215840be4fc6c8b9f3792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Interactables/Editor using Guid(1ad4b528f5b215840be4fc6c8b9f3792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0aafc7c300625d9e29fcc93e62a5798') in 0.006599 seconds 
-  Import took 0.010616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.719783 seconds.
-  path: Assets/LiquidVR/Scripts/Editor/EditorUtils.cs
-  artifactKey: Guid(6ba6cae35ff098f4f9d913de49c809ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LiquidVR/Scripts/Editor/EditorUtils.cs using Guid(6ba6cae35ff098f4f9d913de49c809ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f7966cbfa087e3a905f33f7453b5ca') in 0.778379 seconds 
-  Import took 0.781413 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003387 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Preloading 1 native plugins for Editor in 0.05 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
@@ -389,17 +279,17 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
+- Completed reload, in  1.006 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.46 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 1998 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.6 MB.
-System memory in use after: 90.7 MB.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2009 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.9 MB.
+System memory in use after: 87.9 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2488.
-Total: 2.367900 ms (FindLiveObjects: 0.196600 ms CreateObjectMapping: 0.067600 ms MarkObjects: 2.052400 ms  DeleteObjects: 0.050400 ms)
+Total: 2.238900 ms (FindLiveObjects: 0.195800 ms CreateObjectMapping: 0.069200 ms MarkObjects: 1.891100 ms  DeleteObjects: 0.081200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -413,13 +303,29 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 305.568910 seconds.
+  path: Assets/LiquidVR/Scripts/UI/TMP_Integrations/TimerGUIElement.cs
+  artifactKey: Guid(e3ae10a81d5e81e4e8f6d958808b9f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/UI/TMP_Integrations/TimerGUIElement.cs using Guid(e3ae10a81d5e81e4e8f6d958808b9f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a896c8a27751f156914635a8780e199b') in 0.005451 seconds 
+  Import took 0.010270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.787022 seconds.
+  path: Assets/LiquidVR/Scripts/Core/Converter.cs
+  artifactKey: Guid(350d18c34c82793499e1d710de0b3b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Core/Converter.cs using Guid(350d18c34c82793499e1d710de0b3b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da302132c2a7a465024e06559b6e8721') in 0.006119 seconds 
+  Import took 0.009335 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003353 seconds.
+Registered in 0.003086 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
@@ -427,17 +333,17 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.994 seconds
+- Completed reload, in  1.004 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 1998 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.6 MB.
-System memory in use after: 90.7 MB.
+Unloading 2010 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.8 MB.
+System memory in use after: 87.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2491.
-Total: 2.595100 ms (FindLiveObjects: 0.198800 ms CreateObjectMapping: 0.063400 ms MarkObjects: 2.246000 ms  DeleteObjects: 0.085800 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2492.
+Total: 2.151700 ms (FindLiveObjects: 0.177400 ms CreateObjectMapping: 0.067800 ms MarkObjects: 1.817700 ms  DeleteObjects: 0.088100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -451,12 +357,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 384.809105 seconds.
+  path: Assets/LiquidVR/Scripts/Core/Converter.cs
+  artifactKey: Guid(350d18c34c82793499e1d710de0b3b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVR/Scripts/Core/Converter.cs using Guid(350d18c34c82793499e1d710de0b3b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb7008d53d480dc8a6462050d98cb74') in 0.004212 seconds 
+  Import took 0.006999 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004055 seconds.
+Registered in 0.003151 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\UNITY_PROJECTS\Liquid VR\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
@@ -465,17 +379,17 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.223 seconds
+- Completed reload, in  1.005 seconds
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.62 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 1998 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.6 MB.
-System memory in use after: 90.6 MB.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2010 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.8 MB.
+System memory in use after: 87.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2494.
-Total: 3.020900 ms (FindLiveObjects: 0.298800 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.543200 ms  DeleteObjects: 0.065400 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2495.
+Total: 1.989200 ms (FindLiveObjects: 0.184700 ms CreateObjectMapping: 0.074400 ms MarkObjects: 1.669800 ms  DeleteObjects: 0.059400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
