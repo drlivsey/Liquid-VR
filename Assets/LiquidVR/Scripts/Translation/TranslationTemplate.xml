@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<targets>
+  <item key="some_element_key" name="SOME_NAME">
+    <RU>Русский текст</RU>
+    <UA>Українська мова</UA>
+    <EN>English language</EN>
+  </item>
+</targets>
