@@ -10,12 +10,16 @@
         <e p="LiquidVR" t="Include">
           <e p="Scripts" t="Include">
             <e p="Core" t="Include">
+              <e p="Converter.cs" t="Include" />
               <e p="Enums.cs" t="Include" />
               <e p="Events.cs" t="Include" />
               <e p="Extensions.cs" t="Include" />
+              <e p="TagSelectorAttribute.cs" t="Include" />
+              <e p="UnilityCoroutines.cs" t="Include" />
             </e>
             <e p="Editor" t="Include">
               <e p="EditorUtils.cs" t="Include" />
+              <e p="TagSelectorPropertyDrawer.cs" t="Include" />
             </e>
             <e p="Interactables" t="Include">
               <e p="LiquidControllerInput.cs" t="Include" />
@@ -28,7 +32,16 @@
               <e p="LiquidRigCamera.cs" t="Include" />
               <e p="LiquidRigTeleport.cs" t="Include" />
               <e p="LiquidRigTrigger.cs" t="Include" />
+              <e p="LiquidTargetableSocket.cs" t="Include" />
               <e p="LiquidTeleportInteractor.cs" t="Include" />
+              <e p="StateMachines" t="Include">
+                <e p="ILiquidStateMachineBehaviour.cs" t="Include" />
+                <e p="IState.cs" t="Include" />
+                <e p="IStateMachine.cs" t="Include" />
+                <e p="SimpleState.cs" t="Include" />
+                <e p="SimpleStateMachine.cs" t="Include" />
+                <e p="Transaction.cs" t="Include" />
+              </e>
               <e p="Toggles" t="Include">
                 <e p="Editor" t="Include">
                   <e p="LiquidBaseAnimatorEditor.cs" t="Include" />
@@ -70,10 +83,38 @@
                 <e p="UpdatingSubsystem.cs" t="Include" />
               </e>
             </e>
+            <e p="Translation" t="Include">
+              <e p="AudioTranslator.cs" t="Include" />
+              <e p="BaseTranslator.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="TranslateSetuperEditor.cs" t="Include" />
+              </e>
+              <e p="ImageTranslator.cs" t="Include" />
+              <e p="ITranslatable.cs" t="Include" />
+              <e p="LanguageSetter.cs" t="Include" />
+              <e p="TextTranlslator.cs" t="Include" />
+              <e p="TranslateSetuper.cs" t="Include" />
+              <e p="TranslationTemplate.xml" t="Include" />
+            </e>
             <e p="UI" t="Include">
               <e p="LiquidPlaybackSlider.cs" t="Include" />
               <e p="LiquidVideoPlayerControls.cs" t="Include" />
+              <e p="Pagination" t="Include">
+                <e p="Page.cs" t="Include" />
+                <e p="PaginationGroup.cs" t="Include" />
+              </e>
               <e p="ProgressBar.cs" t="Include" />
+              <e p="SplashScreen" t="Include">
+                <e p="BaseSplashScreen.cs" t="Include" />
+                <e p="SplashCanvas.cs" t="Include" />
+              </e>
+              <e p="Tabulation" t="Include">
+                <e p="TabButton.cs" t="Include" />
+                <e p="TabGroup.cs" t="Include" />
+              </e>
+              <e p="TMP_Integrations" t="Include">
+                <e p="TimerGUIElement.cs" t="Include" />
+              </e>
             </e>
             <e p="Utils" t="Include">
               <e p="AnimatorTrigger.cs" t="Include" />
@@ -105,6 +146,12 @@
                 <e p="ScaleProceduralAnimator.cs" t="Include" />
                 <e p="SimpleProceduralAnimator.cs" t="Include" />
               </e>
+              <e p="SceneManagement" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ScenesLoaderEditor.cs" t="Include" />
+                </e>
+                <e p="ScenesLoader.cs" t="Include" />
+              </e>
               <e p="Semaphore.cs" t="Include" />
               <e p="SequencedEventer.cs" t="Include" />
               <e p="Setters" t="Include">
@@ -122,6 +169,7 @@
                 <e p="PeriodicalSpawner.cs" t="Include" />
                 <e p="SimpleSpawner.cs" t="Include" />
               </e>
+              <e p="Timer.cs" t="Include" />
             </e>
           </e>
         </e>

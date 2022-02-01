@@ -11,31 +11,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidBaseMediaPlayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/BaseLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/ConditionsList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Editor/EditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/ClampedLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/HighLoadedSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/UpdatingSubsystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/FloatLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/SimpleStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidBaseMediaPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/BaseLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/SimpleUpdatableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Semaphore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Lerpers/Editor/FloatLerperEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/BaseSubsystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/BaseUpdatableComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidBaseMediaPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/UI/LiquidVideoPlayerControls.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidSimpleMediaPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Media/LiquidVideoPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/IUpdatableComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ISubsystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/BaseSubsystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/Updating/SimpleUpdatableComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Semaphor.cs" />
         <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Semaphore.cs" />
         <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ActionQueue/ActionsQueueSubsystem.cs" />
         <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Subsystems/ActionsQueue/NewBehaviourScript.cs" />
@@ -78,6 +70,15 @@
         <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/HighLoadedSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/SimpleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Utils/Spawners/PeriodicalSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/New Folder/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/BaseStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/BaseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/SimpleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/Transaction.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/SimpleStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/IStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/LiquidVR/Scripts/Interactables/StateMachines/IState.cs" />
       </list>
     </option>
   </component>
@@ -128,6 +129,7 @@
       <workItem from="1641166757930" duration="2157000" />
       <workItem from="1641234461045" duration="15273000" />
       <workItem from="1641298117916" duration="8030000" />
+      <workItem from="1643490136539" duration="7338000" />
     </task>
     <servers />
   </component>
