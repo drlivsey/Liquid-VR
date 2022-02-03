@@ -15,6 +15,8 @@ namespace Liquid.Utils
         public UnityEvent OnCountdownBegin => m_onCountdownBegin;
         public UnityEvent OnCountdownEnd => m_onCountdownEnd;
 
+        private Coroutine _countdownCoroutine = null;
+
         private void Start()
         {
             if (m_enableOnStart) BeginCountdown();
@@ -22,17 +24,25 @@ namespace Liquid.Utils
 
         public void BeginCountdown()
         {
+            StopCountdown();
             StartCoroutine(WaitForDelay(m_delay, m_waitRealtime));
         }
 
         public void BeginCountdown(float delay)
         {
+            StopCountdown();
             StartCoroutine(WaitForDelay(delay, m_waitRealtime));
         }
 
         public void BeginCountdown(float delay, bool isRealtime = false)
         {
+            StopCountdown();
             StartCoroutine(WaitForDelay(delay, isRealtime));
+        }
+
+        public void StopCountdown()
+        {
+            if (_countdownCoroutine != null) StopCoroutine(_countdownCoroutine);
         }
 
         private IEnumerator WaitForDelay(float delay, bool inRealtime)

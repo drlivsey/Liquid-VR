@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Liquid.Core;
@@ -135,6 +134,8 @@ namespace Liquid.Utils
                 _currentProcess += Time.deltaTime;
                 yield return waitFor;
             }
+            UpdateTransform(direction, 1f);
+
             IsPlaying = false;
             OnAnimationEnd?.Invoke();
             ProcessAnimationEnd(direction);

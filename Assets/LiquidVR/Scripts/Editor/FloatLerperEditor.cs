@@ -1,6 +1,4 @@
 using UnityEditor;
-using UnityEngine;
-using Liquid.CustomInspector.Utils;
 
 namespace Liquid.Utils.Lerpers
 {

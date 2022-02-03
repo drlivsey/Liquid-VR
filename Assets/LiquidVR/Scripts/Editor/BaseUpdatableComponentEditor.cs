@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Liquid.Core;
 using UnityEditor;
 using Liquid.CustomInspector.Utils;
