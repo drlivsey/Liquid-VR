@@ -20,9 +20,9 @@ namespace Liquid.Utils
             switch (direction)
             {
                 case Direction.Forward:
-                return Extensions.LerpAngle(m_beginValue, m_endValue, t);
+                return Vector3.Lerp(m_beginValue, m_endValue, t);
                 case Direction.Backward:
-                return Extensions.LerpAngle(m_endValue, m_beginValue, t);
+                return Vector3.Lerp(m_endValue, m_beginValue, t);
                 default: return Vector3.zero;
             }
         }

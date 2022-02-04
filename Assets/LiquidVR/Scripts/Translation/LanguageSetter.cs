@@ -65,9 +65,6 @@ namespace Liquid.Translation
                     if (TryGetCultureValue(translator.ObjectKey, out var value) == false)
                         continue;
 
-                    if (translator.Initialized == false) 
-                        translator.InitializeComponent();
-                    
                     translator.Translate(value);
                 }
                 catch (Exception ex)

@@ -17,7 +17,6 @@ namespace Liquid.Translation
         public override void InitializeComponent()
         {
             m_translationTarget = m_translationTarget == null ? GetComponent<Image>() : m_translationTarget;
-            base.InitializeComponent();
         }
 
         private bool TryLoadSprite(string spriteName, out Sprite sprite)

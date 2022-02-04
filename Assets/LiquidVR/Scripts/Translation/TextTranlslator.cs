@@ -16,7 +16,6 @@ namespace Liquid.Translation
         public override void InitializeComponent()
         {
             m_translationTarget = m_translationTarget == null ? GetComponent<TMP_Text>() : m_translationTarget;
-            base.InitializeComponent();
         }
     }
 }

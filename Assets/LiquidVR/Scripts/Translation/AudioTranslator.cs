@@ -16,7 +16,6 @@ namespace Liquid.Translation
         public override void InitializeComponent()
         {
             m_translationTarget = m_translationTarget == null ? GetComponent<AudioSource>() : m_translationTarget;
-            base.InitializeComponent();
         }
 
         private bool TryLoadAudio(string clipName, out AudioClip clip)

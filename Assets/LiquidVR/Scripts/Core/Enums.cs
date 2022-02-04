@@ -65,6 +65,13 @@ namespace Liquid.Core
         UpdateByTime = 3
     }
 
+    public enum DialogResult
+    {
+        Undefind = 0,
+        Success = 1,
+        Cancel = 2
+    }
+
     public static class AxisVector3
     {
         public static readonly Vector3 X = Vector3.right;
