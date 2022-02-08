@@ -5,14 +5,39 @@ namespace Liquid.Utils
 {
     public class RotationProceduralAnimator : SimpleProceduralAnimator
     {
-        protected override void UpdateTransform(Direction direction, float t)
+        [SerializeField] protected Vector3 m_beginValue = Vector3.zero;
+        [SerializeField] protected Vector3 m_endValue = Vector3.one;
+
+        private Transform _targetTransform = null;
+
+        public override void SetBeginValues()
         {
-            this.transform.localEulerAngles = GetLerpedValue(direction, t);
+            m_beginValue = this.transform.localEulerAngles;
         }
 
-        protected override void SetValue(out Vector3 value)
+        public override void SetEndValues()
         {
-            value = this.transform.localEulerAngles;
+            m_endValue = this.transform.localEulerAngles;
+        }
+
+        public void SetBeginValues(Vector3 value)
+        {
+            m_beginValue = value;
+        }
+
+        public void SetEndValues(Vector3 value)
+        {
+            m_endValue = value;
+        }
+
+        protected override void InitializeComponent()
+        {
+            _targetTransform = this.transform;
+        }
+
+        protected override void UpdateAnimation(Direction direction, float t)
+        {
+            this.transform.localEulerAngles = GetLerpedValue(direction, t);
         }
 
         protected virtual Vector3 GetLerpedValue(Direction direction, float t)

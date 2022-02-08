@@ -5,14 +5,39 @@ namespace Liquid.Utils
 {
     public class ScaleProceduralAnimator : SimpleProceduralAnimator
     {
-        protected override void UpdateTransform(Direction direction, float t)
+        [SerializeField] protected Vector3 m_beginValue = Vector3.zero;
+        [SerializeField] protected Vector3 m_endValue = Vector3.one;
+
+        private Transform _targetTransform = null;
+
+        public override void SetBeginValues()
         {
-            this.transform.localScale = GetLerpedValue(direction, t);
+            m_beginValue = this.transform.localScale;
         }
 
-        protected override void SetValue(out Vector3 value)
+        public override void SetEndValues()
         {
-            value = this.transform.localScale;
+            m_endValue = this.transform.localScale;
+        }
+
+        public void SetBeginValues(Vector3 value)
+        {
+            m_beginValue = value;
+        }
+
+        public void SetEndValues(Vector3 value)
+        {
+            m_endValue = value;
+        }
+
+        protected override void InitializeComponent()
+        {
+            _targetTransform = this.transform;
+        }
+
+        protected override void UpdateAnimation(Direction direction, float t)
+        {
+            this.transform.localScale = GetLerpedValue(direction, t);
         }
 
         protected virtual Vector3 GetLerpedValue(Direction direction, float t)

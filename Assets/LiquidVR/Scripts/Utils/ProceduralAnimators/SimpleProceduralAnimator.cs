@@ -8,8 +8,6 @@ namespace Liquid.Utils
     public abstract class SimpleProceduralAnimator : BaseProceduralAnimator
     {
         [SerializeField] private IterationType m_animationType = IterationType.Single;
-        [SerializeField] protected Vector3 m_beginValue = Vector3.zero;
-        [SerializeField] protected Vector3 m_endValue = Vector3.one;
         [SerializeField] private float m_animationTime = 1f;
         [SerializeField] private bool m_playOnEnable = false;
         
@@ -34,7 +32,6 @@ namespace Liquid.Utils
 
         protected float _currentProcess = 0f;
         protected Direction _animationDirection = Direction.Forward;
-        protected Transform _targetTransform = null;
         protected Coroutine _animatingRoutine = null;
 
         private void Awake()
@@ -107,21 +104,6 @@ namespace Liquid.Utils
             OnStop?.Invoke();
         }
 
-        public void SetBeginValues()
-        {
-            SetValue(out m_beginValue);
-        }
-
-        public void SetEndValues()
-        {
-            SetValue(out m_endValue);
-        }
-
-        protected void InitializeComponent()
-        {
-            _targetTransform = this.transform;
-        }
-
         protected IEnumerator AnimatingCoroutine(Direction direction)
         {
             OnAnimationBegin?.Invoke();
@@ -130,19 +112,16 @@ namespace Liquid.Utils
             var waitFor = new WaitForEndOfFrame();
             while (_currentProcess <= m_animationTime)
             {
-                UpdateTransform(direction, _currentProcess / m_animationTime);
+                UpdateAnimation(direction, _currentProcess / m_animationTime);
                 _currentProcess += Time.deltaTime;
                 yield return waitFor;
             }
-            UpdateTransform(direction, 1f);
+            UpdateAnimation(direction, 1f);
 
             IsPlaying = false;
             OnAnimationEnd?.Invoke();
             ProcessAnimationEnd(direction);
         }
-
-        protected abstract void UpdateTransform(Direction direction, float t);
-        protected abstract void SetValue(out Vector3 value);
 
         private void ProcessAnimationEnd(Direction direction)
         {
@@ -166,5 +145,11 @@ namespace Liquid.Utils
                     return;
             }
         }
+
+        
+        public abstract void SetBeginValues();
+        public abstract void SetEndValues();
+        protected abstract void InitializeComponent();
+        protected abstract void UpdateAnimation(Direction direction, float t);
     }
 }
