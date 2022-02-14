@@ -10,12 +10,10 @@ namespace Liquid.Interactables
     public class LiquidPlayerStateMachine : MonoBehaviour
     {
         #region Inspector
-        [SerializeField] private PlayerState m_playerState;
         [SerializeField] private List<ControllerState> m_leftControllerStates = new List<ControllerState>();
         [SerializeField] private List<ControllerState> m_rightControllerStates = new List<ControllerState>();
         #endregion
         #region Variables
-        public PlayerState PlayerState => m_playerState;
         private static LiquidPlayerStateMachine _instance = null;
         #endregion
         #region MonoBehaviour callbacks
@@ -38,6 +36,7 @@ namespace Liquid.Interactables
             {
                 case ControllerState.Teleporting: return CanHandTeleport(type);
                 case ControllerState.Interacts : return CanHandInteracts(type);
+                case ControllerState.HoldAnItem : return CanHandGrab(type);
                 case ControllerState.InteractsUI : return CanHandInteractsUI(type);
                 case ControllerState.Clench : return CanHandClench(type);
                 default: return false;
@@ -45,21 +44,17 @@ namespace Liquid.Interactables
         }
         private static bool CanHandTeleport(ControllerType type)
         {
-            if (_instance.m_playerState == PlayerState.Immobilized)
-                return false;
-
             if (type == ControllerType.Undefided)
                 throw new System.Exception("Controller type can not be undefined!");
 
             if (type == ControllerType.LeftController)
             {
                 if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) || 
-                    _instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) || 
-                    _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem) ||
+                    _instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.InteractsUI) || 
-                    _instance.m_leftControllerStates.Contains(ControllerState.Clench) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_leftControllerStates.Contains(ControllerState.Clench) || 
+                    _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem))
                         return false;
             }
 
@@ -67,11 +62,10 @@ namespace Liquid.Interactables
             {
                 if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) || 
                     _instance.m_rightControllerStates.Contains(ControllerState.InteractsUI) || 
-                    _instance.m_leftControllerStates.Contains(ControllerState.Interacts) || 
-                    _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem) ||
+                    _instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Clench) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_rightControllerStates.Contains(ControllerState.Clench) || 
+                    _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem))
                         return false;
             }
 
@@ -85,21 +79,45 @@ namespace Liquid.Interactables
 
             if (type == ControllerType.LeftController)
             {
-                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) || 
+                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) ||
+                    _instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Clench) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_leftControllerStates.Contains(ControllerState.Clench))
                         return false;
             }
 
             if (type == ControllerType.RightController)
             {
-                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) || 
+                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) ||
+                    _instance.m_rightControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Clench) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_rightControllerStates.Contains(ControllerState.Clench))
+                        return false;
+            }
+
+            return true;
+        }
+
+        private static bool CanHandGrab(ControllerType type)
+        {
+            if (type == ControllerType.Undefided)
+                throw new System.Exception("Controller type can not be undefined!");
+
+            if (type == ControllerType.LeftController)
+            {
+                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) ||
+                    _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
+                    _instance.m_leftControllerStates.Contains(ControllerState.Clench))
+                        return false;
+            }
+
+            if (type == ControllerType.RightController)
+            {
+                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) ||
+                    _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
+                    _instance.m_rightControllerStates.Contains(ControllerState.Clench))
                         return false;
             }
 
@@ -113,23 +131,21 @@ namespace Liquid.Interactables
 
             if (type == ControllerType.LeftController)
             {
-                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) || 
-                    _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem) ||
+                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Clench) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_leftControllerStates.Contains(ControllerState.Clench) || 
+                    _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem))
                         return false;
             }
 
             if (type == ControllerType.RightController)
             {
-                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) || 
-                    _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem) ||
+                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Clench) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_rightControllerStates.Contains(ControllerState.Clench) || 
+                    _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem))
                         return false;
             }
 
@@ -140,19 +156,19 @@ namespace Liquid.Interactables
         {
             if (type == ControllerType.LeftController)
             {
-                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) || 
+                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) ||
+                    _instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_leftControllerStates.Contains(ControllerState.Teleporting))
                         return false;
             }
 
             if (type == ControllerType.RightController)
             {
-                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) || 
+                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) ||
+                    _instance.m_rightControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.Animating))
+                    _instance.m_rightControllerStates.Contains(ControllerState.Teleporting))
                         return false;
             }
             
@@ -209,8 +225,6 @@ namespace Liquid.Interactables
                 _instance.m_rightControllerStates.Remove(state);
             }
         }
-
-        public static void SetPlayerState(PlayerState state) => _instance.m_playerState = state;
         #endregion
     }
 }

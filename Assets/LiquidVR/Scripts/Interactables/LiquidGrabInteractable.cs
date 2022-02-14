@@ -1,31 +1,12 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using Liquid.Core;
 
 namespace Liquid.Interactables
 {
-    public class LiquidGrabInteractable : XRGrabInteractable
+    public class LiquidGrabInteractable : XRGrabInteractable, ILiquidInteractable
     {
-        [SerializeField] private bool m_animateHands = false;
-        [SerializeField] private string m_grabStateName = string.Empty;
-        [SerializeField] private string m_releaseStateName = string.Empty;
-
-        public bool IsAnimateHands
-        {
-            get => m_animateHands;
-            protected set => m_animateHands = value;
-        }
-
-        public string GrabStateName
-        {
-            get => m_grabStateName;
-            protected set => m_grabStateName = value;
-        }
-
-        public string ReleaseStateName
-        {
-            get => m_releaseStateName;
-            protected set => m_releaseStateName = value;
-        }
+        [SerializeField] LiquidInteractableAnimationSettings m_animationSettings;
 
         public bool isLocked
         {
@@ -38,6 +19,10 @@ namespace Liquid.Interactables
             get => _lockingInteractor; 
             protected set => _lockingInteractor = value;
         }
+
+        public ControllerState InteractionState => ControllerState.Interacts;
+        public InteractionTriggerAction InteractionAction => InteractionTriggerAction.Select;
+        public LiquidInteractableAnimationSettings AnimationSettings => m_animationSettings;
 
         private bool _isLocked = false;
         private XRBaseInteractor _lockingInteractor = null;

@@ -38,31 +38,97 @@ namespace Liquid.Interactables
 
         public override bool CanHover(XRBaseInteractable interactable)
         {
-            return (LiquidPlayerStateMachine.CanTransact(ControllerState.HoldAnItem, m_controllerType) && base.CanHover(interactable));
+            if (IsLiquidInteractable(interactable))
+            {
+                var liquidInteractable = interactable as ILiquidInteractable;
+                return (LiquidPlayerStateMachine.CanTransact(liquidInteractable.InteractionState, m_controllerType) && base.CanHover(interactable));
+            }
+            else return base.CanHover(interactable);
         }
 
         public override bool CanSelect(XRBaseInteractable interactable)
         {
-            return (LiquidPlayerStateMachine.CanTransact(ControllerState.HoldAnItem, m_controllerType) && base.CanSelect(interactable));
+            if (IsLiquidInteractable(interactable))
+            {
+                var liquidInteractable = interactable as ILiquidInteractable;
+                return (LiquidPlayerStateMachine.CanTransact(liquidInteractable.InteractionState, m_controllerType) && base.CanSelect(interactable));
+            }
+            else return base.CanSelect(interactable);
+        }
+
+        protected override void OnHoverEntering(HoverEnterEventArgs args)
+        {
+            base.OnHoverEntering(args);
+            if (IsLiquidInteractable(args.interactable))
+            {
+                var liquidInteractable = args.interactable as ILiquidInteractable;
+
+                if (liquidInteractable.InteractionAction.Equals(InteractionTriggerAction.Hover))
+                {
+                    LiquidPlayerStateMachine.AddControllerState(m_controllerType, liquidInteractable.InteractionState);
+                }
+
+                if (this.IsAnimateHands && liquidInteractable.AnimationSettings.AnimateOnHover)
+                {
+                    PlayAnimation(liquidInteractable.AnimationSettings.HoverEnterState);
+                }
+            }
+        }
+
+        protected override void OnHoverExiting(HoverExitEventArgs args)
+        {
+            base.OnHoverExiting(args);
+            if (IsLiquidInteractable(args.interactable))
+            {
+                var liquidInteractable = args.interactable as ILiquidInteractable;
+
+                if (liquidInteractable.InteractionAction.Equals(InteractionTriggerAction.Hover))
+                {
+                    LiquidPlayerStateMachine.RemoveControllerState(m_controllerType, liquidInteractable.InteractionState);
+                }
+
+                if (this.IsAnimateHands && liquidInteractable.AnimationSettings.AnimateOnHover)
+                {
+                    PlayAnimation(liquidInteractable.AnimationSettings.HoverExitState);
+                }
+            }
         }
 
         protected override void OnSelectEntering(SelectEnterEventArgs args)
         {
             base.OnSelectEntering(args);
-            LiquidPlayerStateMachine.AddControllerState(m_controllerType, ControllerState.HoldAnItem);
-            if (this.IsAnimateHands && CanBeAnimated(args.interactable))
+            if (IsLiquidInteractable(args.interactable))
             {
-                PlayAnimation((args.interactable as LiquidGrabInteractable).GrabStateName);
+                var liquidInteractable = args.interactable as ILiquidInteractable;
+
+                if (liquidInteractable.InteractionAction.Equals(InteractionTriggerAction.Select))
+                {
+                    LiquidPlayerStateMachine.AddControllerState(m_controllerType, liquidInteractable.InteractionState);
+                }
+
+                if (this.IsAnimateHands && liquidInteractable.AnimationSettings.AnimateOnSelect)
+                {
+                    PlayAnimation(liquidInteractable.AnimationSettings.SelectEnterState);
+                }
             }
         }
 
         protected override void OnSelectExiting(SelectExitEventArgs args)
         {
             base.OnSelectExiting(args);
-            LiquidPlayerStateMachine.RemoveControllerState(m_controllerType, ControllerState.HoldAnItem);
-            if (this.IsAnimateHands && CanBeAnimated(args.interactable))
+            if (IsLiquidInteractable(args.interactable))
             {
-                PlayAnimation((args.interactable as LiquidGrabInteractable).ReleaseStateName);
+                var liquidInteractable = args.interactable as ILiquidInteractable;
+
+                if (liquidInteractable.InteractionAction.Equals(InteractionTriggerAction.Select))
+                {
+                    LiquidPlayerStateMachine.RemoveControllerState(m_controllerType, liquidInteractable.InteractionState);
+                }
+
+                if (this.IsAnimateHands && liquidInteractable.AnimationSettings.AnimateOnSelect)
+                {
+                    PlayAnimation(liquidInteractable.AnimationSettings.SelectExitState);
+                }
             }
         }
         
@@ -83,13 +149,9 @@ namespace Liquid.Interactables
             _targetAnimator = LiquidPlayer.GetHandAnimator(m_controllerType);
         }
 
-        private bool CanBeAnimated(XRBaseInteractable interactable)
+        private bool IsLiquidInteractable(XRBaseInteractable interactable)
         {
-            if (interactable is LiquidGrabInteractable == false)
-            {
-                return false;
-            }
-            return (interactable as LiquidGrabInteractable).IsAnimateHands;
+            return interactable is ILiquidInteractable;
         }
     }
 }

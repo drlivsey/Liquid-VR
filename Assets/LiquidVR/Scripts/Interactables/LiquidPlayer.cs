@@ -31,6 +31,7 @@ namespace Liquid.Interactables
         public static XRRayInteractor LeftTeleport => _instance.m_leftHandTeleport;
         public static XRController RightController => _instance.m_rightHandController;
         public static XRRayInteractor RightTeleport => _instance.m_rightHandTeleport;
+        public static HandsPair CurrentHandsPair => _currentHandsPair;
         private static HandsPair _currentHandsPair;
         private static LiquidPlayer _instance = null;
         #endregion
@@ -194,6 +195,7 @@ namespace Liquid.Interactables
             }
         }
         public Transform Attach => m_attach;
+        public GameObject Prefab => m_prefab;
         private Animator _handAnimator = null;
         #endregion
         #region Methods

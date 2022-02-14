@@ -34,7 +34,7 @@ namespace Liquid.Interactables
             var waitFor = new WaitForEndOfFrame();
             for (var i = 0f; i <= m_animationTime; i += Time.deltaTime)
             {
-                this.transform.localEulerAngles = Extensions.LerpAngle(start, end, i / m_animationTime);
+                this.transform.localEulerAngles = Vector3.Lerp(start, end, i / m_animationTime);
                 yield return waitFor;
             }
             this.transform.localEulerAngles = end;

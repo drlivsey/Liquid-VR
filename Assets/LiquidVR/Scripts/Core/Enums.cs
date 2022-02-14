@@ -21,21 +21,17 @@ namespace Liquid.Core
 
     public enum ControllerState 
     {
-        Undefined = 0, 
-        Free = 1,
-        Interacts = 2,
-        HoldAnItem = 3,
-        Teleporting = 4,
-        Clench = 5,
-        Animating = 6,
-        InteractsUI = 7
+        Interacts = 0,
+        Teleporting = 1,
+        Clench = 2,
+        InteractsUI = 3,
+        HoldAnItem = 4
     }
 
-    public enum PlayerState
+    public enum InteractionTriggerAction
     {
-        Undefined = 0,
-        Free = 1,
-        Immobilized = 2
+        Hover = 0,
+        Select = 1
     }
 
     public enum IterationType
