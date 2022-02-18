@@ -79,8 +79,7 @@ namespace Liquid.Interactables
 
             if (type == ControllerType.LeftController)
             {
-                if (_instance.m_leftControllerStates.Contains(ControllerState.Interacts) ||
-                    _instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) ||
+                if (_instance.m_leftControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.HoldAnItem) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.Teleporting) ||
                     _instance.m_leftControllerStates.Contains(ControllerState.Clench))
@@ -89,8 +88,7 @@ namespace Liquid.Interactables
 
             if (type == ControllerType.RightController)
             {
-                if (_instance.m_rightControllerStates.Contains(ControllerState.Interacts) ||
-                    _instance.m_rightControllerStates.Contains(ControllerState.InteractsUI) ||
+                if (_instance.m_rightControllerStates.Contains(ControllerState.InteractsUI) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.HoldAnItem) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.Teleporting) ||
                     _instance.m_rightControllerStates.Contains(ControllerState.Clench))

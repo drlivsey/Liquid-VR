@@ -20,7 +20,7 @@ namespace Liquid.Interactables
             protected set => _lockingInteractor = value;
         }
 
-        public ControllerState InteractionState => ControllerState.Interacts;
+        public ControllerState InteractionState => ControllerState.HoldAnItem;
         public InteractionTriggerAction InteractionAction => InteractionTriggerAction.Select;
         public LiquidInteractableAnimationSettings AnimationSettings => m_animationSettings;
 
